@@ -1,0 +1,46 @@
+package com.main;
+
+import com.AbtractClass.Vehicle;
+
+public class Car extends Vehicle{
+	
+	int noOfwheels;
+	String colour;
+	String brand;
+	
+	public Car(int noOfwheels, String colour, String brand) {
+		super(noOfwheels, colour, brand);
+		this.noOfwheels = noOfwheels;
+		this.colour = colour;
+		this.brand = brand;
+	}
+	
+	
+
+	public Car() {		
+	}
+
+
+	public void drive() {
+		System.out.println("Inside Drive Method");
+	toString();
+	}
+	
+	public void park() {
+		System.out.println("Inside park Method");
+	
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Car [getNoOfwheels()=" + getNoOfwheels() + ", getColour()=" + getColour() + ", getBrand()=" + getBrand()
+				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ "]";
+	}
+
+
+	
+	
+}
