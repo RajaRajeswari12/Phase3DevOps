@@ -4,9 +4,9 @@ import com.AbtractClass.Vehicle;
 
 public class Car extends Vehicle{
 	
-	private int noOfwheels;
-	private String colour;
-	private String brand;
+	int noOfwheels;
+	String colour;
+	String brand;
 	
 	public Car(int noOfwheels, String colour, String brand) {
 		super(noOfwheels, colour, brand);
